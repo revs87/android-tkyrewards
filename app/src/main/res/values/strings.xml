@@ -2,7 +2,10 @@
     <string name="app_name">TKY Rewards</string>
     <string name="title_home">Home</string>
     <string name="title_journeys">Journeys</string>
-    <string name="title_rewards">Rewards I</string>
-    <string name="title_rewards_android">Rewards A</string>
+    <string name="title_rewards">Rewards</string>
+    <string name="title_rewards_ios">Rewards iOS</string>
+    <string name="title_rewards_android">Rewards Android</string>
     <string name="title_settings">Settings</string>
+    <string name="title_rewards_my">MyRewards</string>
+    <string name="title_rewards_live">LiveRewards</string>
 </resources>

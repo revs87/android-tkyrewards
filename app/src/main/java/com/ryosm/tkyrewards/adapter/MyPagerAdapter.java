@@ -4,7 +4,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.ryosm.tkyrewards.fragment.GenericFragment;
 import com.ryosm.tkyrewards.fragment.RewardsAndroidFragment;
 import com.ryosm.tkyrewards.fragment.RewardsFragment;
 
@@ -14,7 +13,7 @@ import com.ryosm.tkyrewards.fragment.RewardsFragment;
 
 public class MyPagerAdapter extends FragmentPagerAdapter {
 
-    private final int NUM_TABS = 4;
+    private final int NUM_TABS = 2;
 
     private int currentItem;
 
@@ -31,15 +30,9 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int pos) {
         switch (pos) {
             case 0:
-                return GenericFragment.getInstance();
-            case 1:
-                return GenericFragment.getInstance();
-            case 2:
                 return RewardsFragment.getInstance();
-            case 3:
+            case 1:
                 return RewardsAndroidFragment.getInstance();
-//            case 4:
-//                return GenericFragment.getInstance();
         }
         return null;
     }

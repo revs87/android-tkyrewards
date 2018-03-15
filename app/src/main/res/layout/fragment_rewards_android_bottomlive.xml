@@ -13,16 +13,43 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/item_rewards_home" />
-
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:text="MY REWARDS" />
+                android:text="LIVE REWARDS" />
 
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
 
             <include layout="@layout/item_rewards" />
 
@@ -39,6 +66,7 @@
         android:layout_height="55dp"
         android:layout_margin="16dp"
         android:src="@drawable/ic_card_giftcard_white_48dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

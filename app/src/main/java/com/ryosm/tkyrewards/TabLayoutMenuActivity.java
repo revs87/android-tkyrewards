@@ -23,19 +23,10 @@ public class TabLayoutMenuActivity extends AppCompatActivity {
 
             switch (tab.getPosition()) {
                 case 0:
-                    mTextMessage.setText(R.string.title_home);
+                    mTextMessage.setText(R.string.title_rewards_ios);
                     return;
                 case 1:
-                    mTextMessage.setText(R.string.title_journeys);
-                    return;
-                case 2:
-                    mTextMessage.setText(R.string.title_rewards);
-                    return;
-                case 3:
                     mTextMessage.setText(R.string.title_rewards_android);
-                    return;
-                case 4:
-                    mTextMessage.setText(R.string.title_settings);
                     return;
             }
         }
@@ -67,11 +58,10 @@ public class TabLayoutMenuActivity extends AppCompatActivity {
         tabLayout.addOnTabSelectedListener(mOnTabSelectedListener);
 
         tabLayout.removeAllTabs();
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.title_home).setIcon(R.drawable.ic_home_black_24dp));
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.title_journeys).setIcon(R.drawable.ic_dashboard_black_24dp));
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.title_rewards).setIcon(R.drawable.ic_dashboard_black_24dp));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.title_rewards_ios).setIcon(R.drawable.ic_dashboard_black_24dp));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.title_rewards_android).setIcon(R.drawable.ic_dashboard_black_24dp));
-//        tabLayout.addTab(tabLayout.newTab().setText(R.string.title_settings).setIcon(R.drawable.ic_notifications_black_24dp));
+//        tabLayout.addTab(tabLayout.newTab().setText(R.string.title_home).setIcon(R.drawable.ic_home_black_24dp));
+//        tabLayout.addTab(tabLayout.newTab().setText(R.string.title_journeys).setIcon(R.drawable.ic_dashboard_black_24dp));
 
     }
 }

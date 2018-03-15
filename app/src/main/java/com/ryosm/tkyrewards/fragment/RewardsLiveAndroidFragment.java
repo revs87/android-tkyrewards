@@ -16,20 +16,20 @@ import com.ryosm.tkyrewards.R;
  * Created by rui.vieira on 15/03/2018.
  */
 
-public class RewardsAndroidFragment extends Fragment {
+public class RewardsLiveAndroidFragment extends Fragment {
 
     private static Fragment instance;
 
     public static Fragment getInstance() {
         if (instance == null) {
-            instance = new RewardsAndroidFragment();
+            instance = new RewardsLiveAndroidFragment();
         }
         return instance;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_rewards_android, container, false);
+        View v = inflater.inflate(R.layout.fragment_rewards_android_bottomlive, container, false);
 
         FloatingActionButton fab = v.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

@@ -3,9 +3,13 @@ package com.ryosm.tkyrewards;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.ryosm.tkyrewards.fragment.RewardsLiveAndroidFragment;
+import com.ryosm.tkyrewards.fragment.RewardsMyAndroidFragment;
 
 public class BottomNavigationViewMenuActivity extends AppCompatActivity {
 
@@ -17,22 +21,23 @@ public class BottomNavigationViewMenuActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                case R.id.navigation_rewards_my:
+                    switchFragment(RewardsMyAndroidFragment.getInstance());
                     return true;
-                case R.id.navigation_journeys:
-                    mTextMessage.setText(R.string.title_journeys);
-                    return true;
-                case R.id.navigation_rewards:
-                    mTextMessage.setText(R.string.title_settings);
-                    return true;
-                case R.id.navigation_settings:
-                    mTextMessage.setText(R.string.title_settings);
+                case R.id.navigation_rewards_live:
+                    switchFragment(RewardsLiveAndroidFragment.getInstance());
                     return true;
             }
             return false;
         }
     };
+
+    private void switchFragment(Fragment instance) {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.container, instance)
+                .commit();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +47,7 @@ public class BottomNavigationViewMenuActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        switchFragment(RewardsMyAndroidFragment.getInstance());
     }
 
 }

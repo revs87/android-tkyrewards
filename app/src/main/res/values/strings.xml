@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TKY Rewards</string>
+    <string name="title_home">Home</string>
+    <string name="title_journeys">Journeys</string>
+    <string name="title_rewards">Rewards I</string>
+    <string name="title_rewards_android">Rewards A</string>
+    <string name="title_settings">Settings</string>
+</resources>

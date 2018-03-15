@@ -3,6 +3,7 @@ package com.ryosm.tkyrewards;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -48,6 +49,12 @@ public class BottomNavigationViewMenuActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         switchFragment(RewardsMyAndroidFragment.getInstance());
+
+
+        TabLayout tabLayout = findViewById(R.id.navigation_tabs);
+        tabLayout.addTab(tabLayout.newTab().setText("MAIN MENU").setIcon(R.drawable.ic_dashboard_black_24dp));
+        tabLayout.addTab(tabLayout.newTab().setText("MAIN MENU").setIcon(R.drawable.ic_dashboard_black_24dp));
+        tabLayout.addTab(tabLayout.newTab().setText("MAIN MENU").setIcon(R.drawable.ic_dashboard_black_24dp));
     }
 
 }

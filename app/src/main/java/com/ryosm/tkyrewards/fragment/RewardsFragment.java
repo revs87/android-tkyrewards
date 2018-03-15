@@ -27,7 +27,7 @@ public class RewardsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_rewards, container, false);
+        View v = inflater.inflate(R.layout.fragment_rewards_ios, container, false);
 
 
         FloatingActionButton fab = v.findViewById(R.id.fab);

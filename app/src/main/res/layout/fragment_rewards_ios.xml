@@ -36,6 +36,14 @@
 
             <include layout="@layout/item_rewards" />
 
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
+            <include layout="@layout/item_rewards" />
+
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
